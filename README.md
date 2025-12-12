@@ -22,12 +22,12 @@ The application is built as a Single Page Application (SPA) using **React 19**. 
 
 ```mermaid
 graph TD
-    User[User / Mobile Device]
+    User["User / Mobile Device"]
     
     subgraph "Frontend Application (React + Tailwind)"
-        Router[React Router]
-        UI[Liquid Chrome UI Components]
-        Logic[Business Logic]
+        Router["React Router"]
+        UI["Liquid Chrome UI Components"]
+        Logic["Business Logic"]
         
         User -->|Interacts| UI
         UI -->|Navigates| Router
@@ -35,8 +35,8 @@ graph TD
     end
     
     subgraph "External Services"
-        GeminiFlash[Gemini 2.5 Flash (Text)]
-        GeminiImage[Gemini 2.5 Flash Image (Vision)]
+        GeminiFlash["Gemini 2.5 Flash (Text)"]
+        GeminiImage["Gemini 2.5 Flash Image (Vision)"]
     end
     
     Logic -->|Design Advice Request| GeminiFlash
